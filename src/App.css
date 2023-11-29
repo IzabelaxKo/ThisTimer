@@ -19,15 +19,15 @@
   justify-content: space-between;
   box-shadow: 2px 10px 32px 6px rgb(129, 167, 201);
   border-radius: 10px;
-  text-shadow: 6px 6px 4px rgb(106, 110, 174);
-  background-color: rgb(203, 215, 239);
+  text-shadow: 10px 10px 2px rgb(40, 48, 64);
+  background-color: rgb(47, 108, 231);
 }
 
 .time h1{
-  color: rgb(163, 201, 242);
+  color: rgb(128, 189, 255);
   font-weight: 900;
-  font-size: 100px;
-  margin: 5% 0px;
+  font-size: 250px;
+  margin: 2% 0px;
 }
 
 .btns{
@@ -41,24 +41,36 @@
 .btn{
   width: 30%;
   height: 100px;
-  background-color: rgb(213, 228, 247);
-  color: rgb(83, 91, 134);
+  background-color: rgb(213, 233, 247);
   border-radius: 10px;
+  color: rgb(40, 48, 64);
   font-weight: 500;
   font-size: 30px;
   border: none;
-  box-shadow: 1px 5px 15px 1px rgb(130, 129, 167);
+  box-shadow: 1px 5px 15px 1px rgba(40, 48, 64, 0.526);
 }
 
 .btn:hover{
   cursor: pointer;
-  background-color: rgb(152, 165, 221);
-  color: rgb(214, 213, 247);
+  color: rgb(213, 233, 247);
+  background-color: rgb(113, 163, 218);
 }
 
 .divider{
-  background-color: rgb(119, 100, 164);
+  background-color: rgb(40, 48, 64);
   margin: 10px;
   margin-bottom: 20px;
   height: 5px;
+}
+
+.unactive{
+  background-color: rgb(150, 182, 206);
+  color: rgb(81, 88, 105);
+}
+
+.unactive:hover{
+  cursor: default;
+  color: rgb(81, 88, 105);
+  background-color: rgb(150, 182, 206);
+  pointer-events: none;
 }

@@ -6,7 +6,8 @@ function Timer(){
   const [time, setTime] = useState('5:00');
   const [isOver, setIsOver] = useState(false);
   const [doing, setDoing] = useState(false);
-
+  const [startCl, setStartCl] = useState('btn');
+  const [stopCl , setStopCl] = useState('btn');
 
   //function to change the timer (mins and hours)
   function Timing(){
@@ -33,17 +34,23 @@ function Timer(){
   function startTime(){
     setDoing(true);
     setIsOver(false);
+    setStartCl('btn unactive');
+    setStopCl('btn');
   }
 
   // btn stop function
   function stopTimer(){
     setIsOver(true);
+    setStartCl('btn');
+    setStopCl('btn unactive');
   }
 
   // btn reset function
   function resetTime(){
     setTime('5:00')
     setDoing(false);
+    setStartCl('btn');
+    setStopCl('btn unactive');
   }
 
   //hook to do every second after clicking start
@@ -57,14 +64,13 @@ function Timer(){
     }
   })
 
-
   return(
     <div className='time'>
       <h1>{time}</h1>
       <div className='divider'></div>
       <div className='btns'>
-        <button className='btn' onClick={startTime}>START</button>
-        <button className='btn' onClick={stopTimer}>STOP</button>
+        <button className={startCl} onClick={startTime}>START</button>
+        <button className={stopCl} onClick={stopTimer}>STOP</button>
         <button className='btn' onClick={resetTime}>RESET</button>
       </div>
     </div>
