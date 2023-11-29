@@ -1,0 +1,64 @@
+*{
+  box-sizing: border-box;
+}
+
+.App {
+  text-align: center;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgb(163, 201, 242);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.time{
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  box-shadow: 2px 10px 32px 6px rgb(129, 167, 201);
+  border-radius: 10px;
+  text-shadow: 6px 6px 4px rgb(106, 110, 174);
+  background-color: rgb(203, 215, 239);
+}
+
+.time h1{
+  color: rgb(163, 201, 242);
+  font-weight: 900;
+  font-size: 100px;
+  margin: 5% 0px;
+}
+
+.btns{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 40%;
+  margin-bottom: 1%;
+}
+
+.btn{
+  width: 30%;
+  height: 100px;
+  background-color: rgb(213, 228, 247);
+  color: rgb(83, 91, 134);
+  border-radius: 10px;
+  font-weight: 500;
+  font-size: 30px;
+  border: none;
+  box-shadow: 1px 5px 15px 1px rgb(130, 129, 167);
+}
+
+.btn:hover{
+  cursor: pointer;
+  background-color: rgb(152, 165, 221);
+  color: rgb(214, 213, 247);
+}
+
+.divider{
+  background-color: rgb(119, 100, 164);
+  margin: 10px;
+  margin-bottom: 20px;
+  height: 5px;
+}
